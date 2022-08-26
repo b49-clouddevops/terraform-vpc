@@ -4,7 +4,8 @@ pipeline {
         stage('terraform init') {
             steps {
 
-                sh "terraform -f "
+                sh "terrafile -f env-${ENV}/Terrafile"
+                sh ""
             }
         }
     }
