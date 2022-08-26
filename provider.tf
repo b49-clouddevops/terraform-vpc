@@ -4,7 +4,7 @@ provider "aws" {
 
 
 terraform {
-  backend "s3" { }
+  backend "s3" {}
 }
 
 # Backend bucket will be mentioned in the respective environment folder.
