@@ -11,6 +11,7 @@ pipeline {
 
         stage('terraform plan') {
             steps {
+                sh "echo doing a terrafomr plan"
                 sh "terraform plan -var-file=env-${ENV}/${ENV}.tfvars
             }
         }
