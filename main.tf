@@ -3,9 +3,10 @@
 # }
 
 module "vpc" {
-  source    = "./vendor/modules/vpc"
-  VPC_CIDR  = var.VPC_CIDR
-  ENV       = var.ENV
+  source       = "./vendor/modules/vpc"
+  VPC_CIDR     = var.VPC_CIDR
+  ENV          = var.ENV
+  SUBNET_CIDR  = var.SUBNET_CIDR 
 }
 
 # You cannot parameterise the source section of the terraform module : Branc name cannot be parameterised. 
