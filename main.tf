@@ -11,6 +11,8 @@ module "vpc" {
   DEFAULT_VPC_ID   = var.DEFAULT_VPC_ID
   DEFAULT_VPC_CIDR = var.DEFAULT_VPC_CIDR
   DEFAULT_VPC_RT   = var.DEFAULT_VPC_RT
+  PUBLIC_SUBNET_CIDR = var.PUBLIC_SUBNET_CIDR
+  PRIVATE_SUBNET_CIDR
 }
 
 # You cannot parameterise the source section of the terraform module : Branc name cannot be parameterised. 
