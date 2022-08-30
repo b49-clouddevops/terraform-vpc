@@ -4,11 +4,11 @@ output "VPC_ID" {
 }
 
 output "VPC_CIDR" {
-    value = module.vpc.
+    value = module.vpc.VPC_CIDR
 }
 
 output "PRIVATE_SUBNET_ID" {
-    value = aws_subnet.private.*.id 
+    value = module.vpc.PUBLIC_SUBNET_ID
 }
 
 output "PUBLIC_SUBNET_ID" {
