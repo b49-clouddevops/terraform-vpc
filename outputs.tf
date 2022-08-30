@@ -7,17 +7,16 @@ output "VPC_CIDR" {
     value = module.vpc.VPC_CIDR
 }
 
-output "PRIVATE_SUBNET_ID" {
-    value = module.vpc.PUBLIC_SUBNET_ID
+output "PRIVATE_SUBNET_IDS" {
+    value = module.vpc.PUBLIC_SUBNET_IDS
 }
 
 output "PUBLIC_SUBNET_ID" {
-    value = aws_subnet.public.*.id 
+    value = module.vpc.PRIVATE_SUBNET_IDS
 }
 
-
 output "PRIVATE_SUBNET_CIDR" {
-    value = aws_subnet.private.*.cidr_block 
+    value = module.vpc.
 }
 
 output "PUBLIC_SUBNET_CIDR" {
