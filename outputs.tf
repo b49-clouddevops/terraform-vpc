@@ -1,10 +1,10 @@
 # Outputs helps you in sharing the information to other modules as they are going to be published in a format that others can read
 output "VPC_ID" {
-    value = aws_vpc.main.id 
+    value = module.vpc.VPC_ID 
 }
 
 output "VPC_CIDR" {
-    value = aws_vpc.main.cidr_block
+    value = module.vpc.
 }
 
 output "PRIVATE_SUBNET_ID" {
