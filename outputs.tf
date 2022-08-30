@@ -20,7 +20,7 @@ output "PRIVATE_SUBNET_CIDR" {
 }
 
 output "PUBLIC_SUBNET_CIDR" {
-    value = amodule.vpc.PUBLIC_SUBNET_CIDR
+    value = module.vpc.PUBLIC_SUBNET_CIDR
 }
 
 output "DEFAULT_VPC_ID" {
