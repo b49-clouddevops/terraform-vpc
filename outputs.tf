@@ -32,7 +32,18 @@ output "DEFAULT_VPC_CIDR" {
 }
 
 
-variable "HOSTEDZONE_PRIVATE_ID" {}
-variable "HOSTEDZONE_PRIVATE_ZONE" {}
-variable "HOSTEDZONE_PUBLIC_ID" {}
-variable "HOSTEDZONE_PUBLIC_ZONE" {}
+output "HOSTEDZONE_PRIVATE_ID" {
+    value = var.HOSTEDZONE_PRIVATE_ID
+}
+
+output "HOSTEDZONE_PRIVATE_ZONE" {
+    value = var.HOSTEDZONE_PRIVATE_ZONE
+}
+
+output "HOSTEDZONE_PUBLIC_ID" {
+    value = var.HOSTEDZONE_PUBLIC_ID
+}
+
+output "HOSTEDZONE_PUBLIC_ZONE" {
+    value = var.HOSTEDZONE_PUBLIC_ZONE
+}
