@@ -13,6 +13,13 @@ module "vpc" {
   PUBLIC_SUBNET_CIDR  = var.PUBLIC_SUBNET_CIDR
   PRIVATE_SUBNET_CIDR = var.PRIVATE_SUBNET_CIDR
   HOSTEDZONE_PRIVATE_ID =  var.HOSTEDZONE_PRIVATE_ID
+  HOSTEDZONE_PRIVATE_ZONE = var.HOSTEDZONE_PRIVATE_ZONE
+
+variable "HOSTEDZONE_PRIVATE_ID" {}
+variable "HOSTEDZONE_PRIVATE_ZONE" {}
+variable "HOSTEDZONE_PUBLIC_ID" {}
+variable "HOSTEDZONE_PUBLIC_ZONE" {}
+
 }
 
 # You cannot parameterise the source section of the terraform module : Branc name cannot be parameterised. 
